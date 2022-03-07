@@ -1,0 +1,394 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <title>BusiCal!</title>
+  </head>
+  <body>
+    <style>
+      body {
+    background-color: #eee
+}
+
+.card {
+    background-color: white !important;
+    border: none !important;
+    border-radius: 0px !important;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px !important
+}
+
+.card:hover {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px !important
+}
+
+.card>a {
+    text-decoration: none !important;
+    color: black !important
+}
+
+#blockitems {
+    margin-right: 0px !important;
+    margin-left: 0px !important
+}
+
+#icons_section {
+    width: 30%;
+    text-align: center;
+    padding: 0% !important
+}
+
+#icons_section>i {
+    font-size: 25px;
+    color: black !important
+}
+
+#heading_section {
+    width: 100%
+}
+
+#heading_section>h6 {
+    margin-bottom: 0px !important;
+    color: #990ae3 !important
+}
+
+#heading_section>p {
+    font-size: 14px !important
+}
+
+.cssanimation {
+    animation-duration: 1s;
+    animation-fill-mode: both
+}
+
+.fadeInBottom {
+    animation-name: fadeInBottom
+}
+
+@keyframes fadeInBottom {
+    from {
+        opacity: 0;
+        transform: translateY(100%)
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+.cssanimation2 {
+    animation-duration: 2s;
+    animation-fill-mode: both
+}
+
+.fadeInBottom2 {
+    animation-name: fadeInBottom
+}
+
+@keyframes fadeInBottom2 {
+    from {
+        opacity: 0;
+        transform: translateY(100%)
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+.cssanimation3 {
+    animation-duration: 3s;
+    animation-fill-mode: both
+}
+
+.fadeInBottom3 {
+    animation-name: fadeInBottom
+}
+
+@keyframes fadeInBottom3 {
+    from {
+        opacity: 0;
+        transform: translateY(100%)
+    }
+
+    to {
+        opacity: 1
+    }
+}
+      </style>
+    
+    <h1 style="background-color:powderblue; text-align:center" class="m-4">BusiCal!</h1>
+<div class="container">
+    <div class="row">
+        <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4">
+            <div class="row " style="padding: 10px;">
+                <div class="col-xl-12">
+                    <div class="card cssanimation fadeInBottom">
+                            <div class="card-body">
+                                <div class="row" id="blockitems">
+                                    
+                                    <div class="col-sm-8 col-md-9 col-lg-11 col-xl-11" id="heading_section">
+                                        <h6>Calculate Revenue</h6>
+                                        <p>Revenue is the amount of money a company receives in exchange for its goods and services or conversely, what a customer pays a company for its goods or services. The revenue received by a company is usually listed on the first line of the income statement as revenue, sales, net sales, or net revenue.</p>
+                                      <script>
+            
+            function calc()
+            {
+                var n1 = parseFloat(document.getElementById('n1').value);
+                var n2 = parseFloat(document.getElementById('n2').value);
+
+                       document.getElementById('result').value = n1*n2;
+            }
+                                      </script>
+                                      <div class="m-4">
+    <form>
+        <div class="row align-items-center g-3">
+            <div class="col-auto">
+                <label class="visually-hidden" for="inputNumber">Sales</label>
+                <input type="number" class="form-control" id="n1" placeholder="Enter Sales" required>
+            </div>
+            <div class="col-auto">
+                <label class="visually-hidden" for="inputNumber">Avarage Price</label>
+                <input type="number" class="form-control" id="n2" placeholder="Enter Avarage Price" required>
+            </div>
+            
+            <div class="col-auto">
+                <button onclick="calc()" type="button" class="btn btn-primary">Calculate</button>
+            </div>
+          <div class="col-auto">
+                <label class="visually-hidden">Total Revenue</label>
+                <input type="text" class="form-control" id="result" placeholder="Your Result">
+            </div>
+        </div>
+    </form>
+</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a> </div>
+                </div>
+            </div>
+        </div>
+        <!--First Card End-->
+        <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4">
+            <div class="row" style="padding: 10px;">
+                <div class="col-md-12">
+                    <div class="card cssanimation2 fadeInBottom2"> 
+                            <div class="card-body">
+                                <div class="row" id="blockitems">
+                                    
+                                    <div class="col-sm-8 col-md-9 col-lg-11 col-xl-11" id="heading_section">
+                                        <h6>Calculate Profit</h6>
+                                        <p>Profit describes the financial benefit realized when revenue generated from a business activity exceeds the expenses, costs, and taxes involved in sustaining the activity in question. Any profits earned funnel back to business owners, who choose to either pocket the cash or reinvest it back into the business. Profit is calculated as total revenue less total expenses.</p>
+                                      <script>
+            
+            function rev()
+            {
+                var m1 = parseFloat(document.getElementById('m1').value);
+                var m2 = parseFloat(document.getElementById('m2').value);
+
+                       document.getElementById('res').value = m1-m2;
+            }
+                                      </script>
+                                      <div class="m-4">
+                                        
+    
+                                        <form>
+        <div class="row align-items-center g-3">
+            <div class="col-auto">
+                <label class="visually-hidden" for="inputNumber">Revenue</label>
+                <input type="number" class="form-control" id="m1" placeholder="Enter Revenue" required>
+            </div>
+            <div class="col-auto">
+                <label class="visually-hidden" for="inputNumber">Expanses</label>
+                <input type="number" class="form-control" id="m2" placeholder="Enter Expanses" required>
+            </div>
+            <div class="col-auto">
+                <button onclick="rev()" type="button" class="btn btn-primary">Calculate</button>
+            </div>
+          <div class="col-auto">
+                <label class="visually-hidden">Total Profit</label>
+                <input type="text" class="form-control" id="res" placeholder="Your Result">
+            </div>
+        </div>
+    </form>
+</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a> </div>
+                </div>
+            </div>
+        </div>
+
+      <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4">
+            <div class="row" style="padding: 10px;">
+                <div class="col-md-12">
+                    <div class="card cssanimation2 fadeInBottom2"> 
+                            <div class="card-body">
+                                <div class="row" id="blockitems">
+                                    
+                                    <div class="col-sm-8 col-md-9 col-lg-11 col-xl-11" id="heading_section">
+                                        <h6>Gross Margin</h6>
+                                        <p>Gross margin is net sales less the cost of goods sold (COGS). In other words, it's the amount of money a company retains after incurring the direct costs associated with producing the goods it sells and the services it provides.</p>
+                                      <script>
+            
+            function reve()
+            {
+                var p1 = parseFloat(document.getElementById('p1').value);
+                var p2 = parseFloat(document.getElementById('p2').value);
+
+                       document.getElementById('rese').value = (p1-p2)/p1;
+            }
+                                      </script>
+                                      <div class="m-4">
+                                        
+    
+                                        <form>
+        <div class="row align-items-center g-3">
+            <div class="col-auto">
+                <label class="visually-hidden" for="inputNumber">Revenue</label>
+                <input type="number" class="form-control" id="p1" placeholder="Enter Revenue" required>
+            </div>
+            <div class="col-auto">
+                <label class="visually-hidden" for="inputNumber">Cost</label>
+                <input type="number" class="form-control" id="p2" placeholder="Enter Cost" required>
+            </div>
+            <div class="col-auto">
+                <button onclick="reve()" type="button" class="btn btn-primary">Calculate</button>
+            </div>
+          <div class="col-auto">
+                <label class="visually-hidden">Total Gross Margin</label>
+                <input type="text" class="form-control" id="rese" placeholder="Your Result">
+            </div>
+        </div>
+    </form>
+</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a> </div>
+                </div>
+            </div>
+        </div>
+
+      <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4">
+            <div class="row" style="padding: 10px;">
+                <div class="col-md-12">
+                    <div class="card cssanimation2 fadeInBottom2"> 
+                            <div class="card-body">
+                                <div class="row" id="blockitems">
+                                    
+                                    <div class="col-sm-8 col-md-9 col-lg-11 col-xl-11" id="heading_section">
+                                        <h6>ROI</h6>
+                                        <p>Return on Investment (ROI) is a popular profitability metric used to evaluate how well an investment has performed. ROI is expressed as a percentage and is calculated by dividing an investment's net profit (or loss) by its initial cost or outlay.</p>
+                                      <script>
+            
+            function revea()
+            {
+                var k1 = parseFloat(document.getElementById('k1').value);
+                var k2 = parseFloat(document.getElementById('k2').value);
+
+                       document.getElementById('resea').value = (k1/k2)*100;
+            }
+                                      </script>
+                                      <div class="m-4">
+                                        
+    
+                                        <form>
+        <div class="row align-items-center g-3">
+            <div class="col-auto">
+                <label class="visually-hidden" for="inputNumber">Net Profit</label>
+                <input type="number" class="form-control" id="k1" placeholder="Enter Net Profit" required>
+            </div>
+            <div class="col-auto">
+                <label class="visually-hidden" for="inputNumber">Cost</label>
+                <input type="number" class="form-control" id="k2" placeholder="Enter Cost" required>
+            </div>
+            <div class="col-auto">
+                <button onclick="revea()" type="button" class="btn btn-primary">Calculate</button>
+            </div>
+          <div class="col-auto">
+                <label class="visually-hidden">Total ROI</label>
+                <input type="text" class="form-control" id="resea" placeholder="Your Result">
+            </div>
+        </div>
+    </form>
+</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a> </div>
+                </div>
+            </div>
+        </div>
+
+
+<div class="col-sm-12 col-md-12 col-lg-4 col-xl-4">
+            <div class="row" style="padding: 10px;">
+                <div class="col-md-12">
+                    <div class="card cssanimation2 fadeInBottom2"> 
+                            <div class="card-body">
+                                <div class="row" id="blockitems">
+                                    
+                                    <div class="col-sm-8 col-md-9 col-lg-11 col-xl-11" id="heading_section">
+                                        <h6>Discounted</h6>
+                                        <p>The term discount refers to the amount or percentage deducted from the normal selling price of something. The discount means a reduction in the price of a good or service. For example, we may ask the manager for a discount if the item is damaged.</p>
+                                      <script>
+            
+            function reveg()
+            {
+                var s1 = parseFloat(document.getElementById('s1').value);
+                var s2 = parseFloat(document.getElementById('s2').value);
+
+                       document.getElementById('reseg').value = ((s1-s2)/s1)*100;
+            }
+                                      </script>
+                                      <div class="m-4">
+                                        
+    
+                                        <form>
+        <div class="row align-items-center g-3">
+            <div class="col-auto">
+                <label class="visually-hidden" for="inputNumber">Selling Price</label>
+                <input type="number" class="form-control" id="s1" placeholder="Enter Selling Price" required>
+            </div>
+            <div class="col-auto">
+                <label class="visually-hidden" for="inputNumber">Last Price</label>
+                <input type="number" class="form-control" id="s2" placeholder="Enter List Price" required>
+            </div>
+            <div class="col-auto">
+                <button onclick="reveg()" type="button" class="btn btn-primary">Calculate</button>
+            </div>
+          <div class="col-auto">
+                <label class="visually-hidden">Total Discounted </label>
+                <input type="text" class="form-control" id="reseg" placeholder="Your Result">
+            </div>
+        </div>
+    </form>
+</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a> </div>
+                </div>
+            </div>
+        </div>
+      
+        
+    </div>
+</div>    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+<footer class="m-4">
+  <p style="background-color:powderblue; text-align:center">@ Mr.Gaurav Mahajan<br>
+  </p>
+</footer>
+    
+  </body>
+</html>
